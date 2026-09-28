@@ -6,7 +6,7 @@ A bilingual React frontend for educational robotics: explore the platform, searc
 
 **Published NeuroFly website: [www.neurofly.net](https://www.neurofly.net/)** · [Live wiki](https://www.neurofly.net/wiki.html) · [Developer resources](https://www.neurofly.net/software.html)
 
-![React learning portal preview](docs/preview.png)
+![React learning portal preview](docs/neurofly.JPG)
 
 **Contents:** [Live site/repository](#live-site-and-this-repository) · [Architecture](#architecture) · [Content/data](#content-and-data-model) · [Run](#local-development) · [Build/deploy](#production-build-and-hosting) · [Validation](#validation)
 
