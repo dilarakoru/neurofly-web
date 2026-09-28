@@ -199,8 +199,4 @@ tests/                  Progress-state tests
 | Static-host blank page | Publish `dist/` contents, preserve asset paths and use hash routes |
 | Appearance differs from neurofly.net | This is a separate React iteration, not a verified mirror of the deployed site |
 
-## Next steps
 
-Add browser end-to-end tests; audit keyboard, screen-reader and mobile behavior; review educational content; define a deployment/migration plan if this iteration should replace the live site. Introduce a CMS or account synchronization only when editor/learner requirements justify it.
-
-[Engineering decisions and demo](docs/ENGINEERING.md) · [Provenance and AI assistance](docs/PROVENANCE.md). Refactoring, tests and documentation were AI-assisted; historical contribution and hardware ownership are not inferred from the codebase.
