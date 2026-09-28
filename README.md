@@ -1,5 +1,7 @@
 # NeuroFly Learning Portal
 
+[![CI](https://github.com/dilarakoru/neurofly-web/actions/workflows/ci.yml/badge.svg)](https://github.com/dilarakoru/neurofly-web/actions/workflows/ci.yml)
+
 > Product walkthrough, design trade-offs and next experiments: [Engineering notes](docs/ENGINEERING.md).
 
 ![Application preview](docs/preview.png)
@@ -33,7 +35,7 @@ npm run build:portable
 python -m http.server 8003 --bind 127.0.0.1 --directory dist
 ```
 
-The fallback requires Python 3 and Windows x64. It produces a normal static `dist/` site using the same React source. `npm run build` is included in CI but was not successfully run in this constrained environment. ESLint and both Node tests passed; the generated bundle was checked in a browser.
+The fallback requires Python 3 and Windows x64. It produces a normal static `dist/` site using the same React source. `npm ci`, ESLint, both Node tests and the standard `npm run build` all passed on GitHub Actions (Ubuntu, Node 24). The local portable bundle was also checked in a browser. The fallback is only needed in environments that restrict Node child processes.
 
 ## Features
 
