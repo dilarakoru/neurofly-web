@@ -1,0 +1,90 @@
+/* Wiki specific styling for rendering the Markdown/HTML content safely */
+.wiki-content .markdown-content h2,
+.wiki-content .markdown-content h3,
+.wiki-content .markdown-content h4 {
+    color: var(--text-main);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.wiki-content .markdown-content h2 {
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.wiki-content .markdown-content h3 {
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.wiki-content .markdown-content p {
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+}
+
+.wiki-content .markdown-content ul,
+.wiki-content .markdown-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.wiki-content .markdown-content li {
+    margin-bottom: 0.5rem;
+}
+
+.wiki-content .markdown-content a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.wiki-content .markdown-content a:hover {
+    color: #4da6ff;
+}
+
+.wiki-content .markdown-content pre {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wiki-content .markdown-content code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    color: #ffd700;
+}
+
+/* Inline code block */
+.wiki-content .markdown-content p code,
+.wiki-content .markdown-content li code {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #ffd700;
+}
+
+/* Scrollbar styling for sidebar */
+.wiki-sidebar {
+    position: sticky;
+    top: 120px;
+    /* Header height + buffer */
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+}
+
+.wiki-sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.wiki-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.wiki-sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}

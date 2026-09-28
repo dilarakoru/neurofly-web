@@ -1,0 +1,7 @@
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import DroneGSAP from '../components/DroneGSAP';
+export default function Home(){
+ const {t}=useTranslation();const keys=['core','stab','open','mob','mod','class'];
+ return <main><header className="portfolio-hero"><div className="container portfolio-hero-grid"><div><p className="portfolio-eyebrow">NEUROFLY / LEARNING PORTAL</p><h1>{t('hero_title')}</h1><p className="portfolio-lead">{t('hero_desc')}</p><div className="flex gap-1" style={{flexWrap:'wrap'}}><Link className="btn btn-primary" to="/wiki">{t('hero_btn_wiki')}</Link><Link className="btn btn-outline" to="/software">{t('hero_btn_start')}</Link></div></div><div className="portfolio-drone"><DroneGSAP/></div></div></header><section className="section container"><h2>{t('about_title')}</h2><p style={{maxWidth:800,color:'var(--text-muted)',fontSize:20}}>{t('about_desc')}</p></section><section className="section" style={{background:'var(--secondary)'}}><div className="container"><h2>{t('feat_title')}</h2><p>{t('feat_desc')}</p><div className="portfolio-features">{keys.map((key,i)=><article className="portfolio-feature" key={key}><small>0{i+1}</small><h3>{t(`feat_${key}_title`)}</h3><p>{t(`feat_${key}_desc`)}</p></article>)}</div></div></section><section className="section container"><h2>{t('cta_title')}</h2><p>{t('cta_desc')}</p><Link className="btn btn-primary" to="/market" style={{marginTop:24}}>{t('cta_btn')}</Link></section></main>;
+}
