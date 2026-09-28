@@ -12,7 +12,7 @@ A bilingual React frontend for educational robotics: explore the platform, searc
 
 ## Live site and this repository
 
-NeuroFly has a published website at **neurofly.net** introducing its educational drone platform and linking to documentation and software resources. This repository contains a **React learning-portal iteration prepared from the existing local frontend project**.
+NeuroFly has a published website at **neurofly.net** introducing its educational drone platform and linking to documentation and software resources. This repository contains a **React learning-portal iteration built from the existing frontend project**.
 
 The site and repository are related, but they are not verified as the same deployment. The public site exposes `.html` pages; this build uses hash routes and includes a local learning checklist. No source identity, backend integration or hardware behavior is inferred from the domain alone. The screenshot above is the React repository version.
 
@@ -35,7 +35,7 @@ The live link provides project context. This frontend does not itself run an AI 
 4. Reload and resume from valid progress saved in the same browser.
 5. Switch between English and Turkish.
 
-This iteration replaces placeholder store/download actions in the local prototype with a coherent learning flow. It demonstrates frontend product engineering, alongside the separate AI-focused projects in the portfolio.
+This iteration replaces placeholder store/download actions in the local prototype with a coherent learning flow and demonstrates frontend product engineering alongside separate AI-focused work.
 
 ## Architecture
 
@@ -137,11 +137,11 @@ npm run preview
 
 Vite writes **`dist/`**. The preview URL is normally **http://localhost:4173**. Publish the contents of `dist/`, not the source tree or `node_modules`. `base: './'` preserves relative asset paths; hash routing avoids server-side deep-link rewrite requirements.
 
-The standard production build passed on GitHub Actions. This repository does **not automatically update neurofly.net**. Replacing the published site would require its actual hosting configuration and a deliberate release; no live-site replacement was performed during portfolio preparation.
+The standard production build passed on GitHub Actions. This repository does **not automatically update neurofly.net**. Replacing the published site would require its actual hosting configuration and a deliberate release.
 
 ### Optional Windows build fallback
 
-The local preparation environment blocked Node child-process creation with `spawn EPERM`. The fallback calls installed esbuild through Python:
+One local Windows environment blocked Node child-process creation with `spawn EPERM`. The fallback calls installed esbuild through Python:
 
 ```powershell
 npm ci
